@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+}
+
+input {
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  /* outline:フォームにフォーカス当てた時の枠線 */
+  outline: none;
+}
+
+button {
+  border-radius: 16px;
+  border: none;
+  padding: 4px 16px;
+}
+
+button:hover {
+  background-color: #ff7fff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.input_area {
+  background-color: #c1ffff;
+  width: 400px;
+  height: 30px;
+  /* padding:内側の余白 */
+  padding: 8px;
+  /* padding:外側の余白 */
+  margin: 8px;
+  /* border-radius: 角を丸くする */
+  border-radius: 8px;
+}
+
+.incomplete_area {
+  background-color: #c6ffe2;
+  width: 400px;
+  /* min-height:最低限の高さを指定できる（ここはtodoの量で高さが変わるため） */
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.complete_area {
+  background-color: #ffffe0;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.list_row {
+  /* display: flex; 直下の子要素を横並びに整列させる */
+  display: flex;
+  /* align-items: flexアイテムを縦軸として見たときにどこで揃えるか指定する */
+  align-items: center;
+  /* padding-bottom: 4px; 妙に行間が空くのでコメントアウト(多分liのせい)*/
+}
+
+/* 動画ではliに指定されていたが、divの位置の関係でpタグのクラスでボタンの前の余白を指定した */
+.list_content {
+  margin-right: 40px;
+}
+
+/* ボタンの2個目とそれ以降の余白を指定...2+n */
+.list_row button:nth-child(n + 2) {
+  margin-right: 10px;
+}

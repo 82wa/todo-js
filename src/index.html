@@ -1,0 +1,49 @@
+ｍみｍみ<!DOCTYPE html>
+<html>
+  <head>
+    <title>todo(JS)</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!-- 入力エリア -->
+    <div class="input_area">
+      <input placeholder="todoを入力" />
+      <button>add</button>
+    </div>
+    <!-- 未完了エリア -->
+    <div class="incomplete_area">
+      <p class="title">未完了のtodo</p>
+      <ul>
+        <li>
+          <div class="list_row">
+            <p class="list_content">todoです</p>
+            <button>完了</button>
+            <button>削除</button>
+          </div>
+        </li>
+        <li>
+          <div class="list_row">
+            <p class="list_content">todoです</p>
+            <button>完了</button>
+            <button>削除</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 完了エリア -->
+    <div class="complete_area">
+      <p class="title">完了したtodo</p>
+      <ul>
+        <li>
+          <div class="list_row">
+            <p class="list_content">todoでした</p>
+            <button>戻す</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
