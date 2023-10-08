@@ -1,4 +1,4 @@
-ｍみｍみ<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>todo(JS)</title>
@@ -8,39 +8,34 @@
   <body>
     <!-- 入力エリア -->
     <div class="input_area">
-      <input placeholder="todoを入力" />
-      <button>add</button>
+      <input id="add_text" placeholder="todoを入力" />
+      <button id="add_button">add</button>
     </div>
+
     <!-- 未完了エリア -->
     <div class="incomplete_area">
       <p class="title">未完了のtodo</p>
-      <ul>
-        <li>
+      <ul id="incomplete_list">
+        <!-- <li>
           <div class="list_row">
             <p class="list_content">todoです</p>
             <button>完了</button>
             <button>削除</button>
           </div>
-        </li>
-        <li>
-          <div class="list_row">
-            <p class="list_content">todoです</p>
-            <button>完了</button>
-            <button>削除</button>
-          </div>
-        </li>
+        </li> -->
       </ul>
     </div>
+
     <!-- 完了エリア -->
     <div class="complete_area">
       <p class="title">完了したtodo</p>
-      <ul>
-        <li>
+      <ul id="complete_list">
+        <!-- <li>
           <div class="list_row">
             <p class="list_content">todoでした</p>
             <button>戻す</button>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
 
